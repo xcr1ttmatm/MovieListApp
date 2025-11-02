@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import movieTrailer from "movie-trailer";
 
-const API_URL = "http://www.omdbapi.com/?apikey=aaff83d6";
+const API_URL = "https://www.omdbapi.com/?apikey=aaff83d6";
 
 function MovieDetails({ toggleFavorite, isFavorite }) {
   const { id } = useParams();
@@ -266,5 +266,6 @@ function MovieDetails({ toggleFavorite, isFavorite }) {
     </div>
   );
 }
+
 
 export default MovieDetails;
